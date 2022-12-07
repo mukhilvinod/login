@@ -19,7 +19,7 @@ def register(request):
         place=request.POST.get('place')
         new_user(username=username,email=email,password=password,phone=phone,place=place).save()
 
-    return render(request,'reg.html')
+    return render(request,'index.html')
 
 
 def login(request):
